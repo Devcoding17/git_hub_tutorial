@@ -14,5 +14,9 @@ def bye_name(name):
 def hello_name(name):
    return f'Hello{name}! Thank You for checking out at {datetime.now()}'
 
+@app.route('/bye_with_datetime/<name>')
+def bye_with_datetime(name):
+   return f'bye{name}! cuurent time at {datetime.now()}'
+
     if __name__ == '__main__':
         app.run()
